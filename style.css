@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf6ff;
+    color: #003366;
+}
+
+/* University Header */
+header {
+    background-color: #092b87;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-bottom: 3px solid #d6b45c;
+}
+
+header img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+header h2 {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Navigation */
+nav {
+    background-color: #d8efff;
+    padding: 14px 20px;
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #c6ddeb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #003366;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #0055cc;
+    text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+    padding: 30px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 950px;
+    margin: auto;
+}
+
+/* Login Form */
+.login-box {
+    background-color: #f1faff;
+    width: 50%;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.login-box h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #003366;
+}
+
+.login-box label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 30px;
+    border: 1px solid #c5ddeb;
+    border-radius: 7px;
+    background-color: #f4fbff;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #0055cc;
+}
+
+/* Login Button */
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background-color: #0637b5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #002b88;
+}
+
+/* Campus Image */
+.image-box {
+    width: 50%;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 700px) {
+    header h2 {
+        font-size: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .login-box,
+    .image-box {
+        width: 100%;
+    }
+
+    .image-box img {
+        height: 250px;
+        min-height: 0;
+    }
+}
